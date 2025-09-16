@@ -282,27 +282,24 @@ section.animate {
 }
 
 /* Tech Stack Section */
-.tech-stack {
-    margin-top: 3rem;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+.tech-stack-section {
+    background-color: var(--light-gray);
+    padding: 80px 0;
 }
 
-.tech-stack h3 {
-    color: var(--secondary-green);
-    margin-bottom: 2rem;
-    text-align: center;
+.tech-stack-content {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .tech-category {
     margin-bottom: 2rem;
 }
 
-.tech-category h4 {
-    color: var(--accent-green);
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
+.tech-category h3 {
+    color: var(--secondary-green);
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 600;
 }
 
@@ -628,10 +625,6 @@ section.animate {
     .profile-image {
         width: 120px;
         height: 120px;
-    }
-
-    .tech-stack {
-        margin-top: 2rem;
     }
 
     .tech-tag {
