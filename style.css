@@ -224,8 +224,31 @@ section.animate {
 }
 
 .about-content {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.about-profile {
+    text-align: center;
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 30px var(--shadow);
+    border: 4px solid var(--accent-green);
+    transition: all 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px var(--shadow-hover);
 }
 
 .about-text h3 {
@@ -538,6 +561,17 @@ section.animate {
 
     .section-title {
         font-size: 2rem;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .profile-image {
+        width: 200px;
+        height: 200px;
     }
 
     .achievements-grid {
